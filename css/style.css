@@ -1,0 +1,400 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  font-size: 62.5%;
+  font-family: "Poppins";
+  background-image: url(../img/34.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: rgba(255, 255, 255, .15); */
+  backdrop-filter: blur(15px);
+}
+
+@font-face {
+  font-family: "designer";
+  src: url("../fonts/designer/DESIGNER.otf") format('truetype');
+}
+
+@font-face {
+  font-family: "vorname";
+  src: url("../fonts/vorname/Vorname.otf") format('truetype');
+}
+
+.language{
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.spanish {
+  background-image: url(../frames/mex.png);
+  background-size: 100% 100%;
+  border: none;
+  cursor: pointer;
+  width: 45px;
+  height: 25px;
+  outline: none;
+}
+
+.english {
+  background-image: url(../frames/usa.jpg);
+  background-size: 100% 100%;
+  border: none;
+  cursor: pointer;
+  width: 45px;
+  height: 25px;
+  outline: none;
+  margin-left: 5px;
+}
+
+.game {
+  position: relative;
+  height: 85vh;
+  max-width: 410px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0px 50px 0 50px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.title h1 {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: rgb(39, 41, 41);
+}
+
+.title h2 {
+  font-family: "designer";
+  font-size: 2rem;
+  color: rgb(22, 22, 22);
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.container-card {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: center; 
+  text-align: center;
+  border: 2px solid rgb(235, 230, 220);
+  border-radius: 10px;
+  /* background-color: rgba(255, 255, 255, 0.24); */
+  width: 90%;
+  margin: 0 auto;
+  padding: 7px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.342);
+}
+
+.container-user img{
+  width: 70px;
+  height: 70px;
+  transition: transform .5s;
+  transform: scaleX(-1);
+}
+
+.container-img-vs img{
+  width: 83px;
+  height: 83px;
+  transition: transform .5s;
+}
+.container-ai img{
+  width: 70px;
+  height: 70px;
+}
+
+.container-card p{
+  font-size: 1.6rem;
+  /* font-family: "vorname"; */
+}
+
+/* ___________________________________________________ */
+
+.match {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid rgb(235, 230, 220);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.349);
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.choises {
+  color: rgb(24, 22, 22);
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 10px; */
+  width: 95%;
+  padding: 10px;
+   border: 2px solid rgb(235, 230, 220);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.342);
+}
+
+.options .rock {
+  background-image: url(../img/rock.png);
+  background-size: 100% 100%;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.001);
+  transition: all 0.3s ease;
+  color: transparent;
+  transition: transform .5s;
+}
+
+.options .rock:focus {
+  outline: none;
+}
+
+.options .rock:hover {
+  cursor: pointer;
+
+  transform: scale(1.2)
+}
+
+.options .paper {
+  background-image: url(../img/paper.png);
+  background-size: 100% 100%;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+
+  background-color: rgba(0, 0, 0, 0.001);
+  transition: all 0.3s ease;
+  color: transparent;
+  transition: transform .5s;
+}
+
+.options .paper:focus {
+  outline: none;
+}
+
+.options .paper:hover {
+  cursor: pointer;
+  transform: scale(1.2)
+}
+
+.options .scissors {
+  background-image: url(../img/scissors.png);
+  background-size: 100% 100%;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+
+  background-color: rgba(0, 0, 0, 0.001);
+  transition: all 0.3s ease;
+  color: transparent;
+}
+
+.options .scissors:focus {
+  outline: none;
+}
+
+.options .scissors:hover {
+  cursor: pointer;
+  transform: scale(1.2)
+}
+
+.reset {
+  color: rgb(27, 26, 26);
+  font-family: "Poppins";
+  font-size: 1.8rem;
+  margin-top: 12px;
+}
+
+.reset:hover {
+  cursor: pointer;
+  border: transparent;
+  transition: opacity 0.5s ease;
+  transition: transform .5s;
+}
+
+.modal-container {
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  /* left: 0;
+  top: 0; */
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  position: absolute;
+  transition: opacity 0.5s ease 0.5s;
+}
+
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 18px;
+  transition: transform 1s;
+  transform: translateY(0%);
+  background-image: url(../img/blur.jpg);
+  background-size: cover;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 90%;
+  height: 78%;
+  padding: 1rem;
+  backdrop-filter: blur(2px);
+  background-color: rgba(231, 225, 225, 0.349);
+  box-shadow: 0 5px 8px 0 rgba(209, 12, 12, 0.2), 0 7px 20px 0 rgba(14, 13, 13, 0.17);
+}
+
+.close{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  color: wheat;
+  border-radius: 50%;
+  background-image: url(../img/error.svg);
+  color: transparent;
+  cursor: pointer;
+}
+
+.banner{
+  position: relative;
+  top: 5px;
+  /* left: 5px; */
+  left: calc(90% - 3px);
+  width: 8.5%;
+  height: 8.5%;
+  animation: banner 25s linear infinite forwards;
+}
+
+@keyframes banner {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}
+
+.welcome{
+  color: rgb(15, 17, 17);
+  font-size: 1.8rem;
+}
+
+.banner-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.4rem;
+  color: rgb(16, 19, 19);
+  margin: 0 auto;
+}
+/* ====================english frame======================= */
+.frameone{
+  background-image: url(../frames/framemobile.png);
+  background-size: 100% 100%;
+  border: none;
+  width: 320px;
+  height: 145px;
+}
+
+.frametwo{
+  background-image: url(../frames/frametwomobile.png);
+  background-size: 100% 100%;
+  border: none;
+  width: 320px;
+  height: 156px;
+}
+
+.alertwon{
+  background-image: url(../frames/message.png);
+  background-size: 100% 100%;
+  border: none;
+  width: 320px;
+  height: 156px;
+}
+/* ====================spanish frame======================= */
+.frameonespa{
+  background-image: url(../frames/frameonespa.png);
+  background-size: 100% 100%;
+  border: none;
+  width: 320px;
+  height: 145px;
+}
+
+.frametwospa{
+  background-image: url(../frames/frametwospa.png);
+  background-size: 100% 100%;
+  border: none;
+  width: 320px;
+  height: 156px;
+}
+
+.mensaje{
+  background-image: url(../frames/mensaje.png);
+  background-size: 100% 100%;
+  border: none;
+  width: 320px;
+  height: 156px;
+}
+
+.Instructionframe{
+  text-align: left;
+}
+.objetive{
+  text-align: left;
+}
+.objetive li{
+  text-align: left;
+}
+.hand li{
+  text-align: left;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1.2rem;
+  color: aliceblue;
+  padding: 10px;
+}

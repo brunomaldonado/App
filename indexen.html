@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="follow html">
+  <meta name="author" content="Bumr">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/tablet.css" media="(min-width:768px)">
+  <link rel="stylesheet" href="./css/desktop.css" media="(min-width:1026px)">
+  <title>Rock, Paper or Scissors</title>
+</head>
+
+<body>
+  <section class="language">
+    <a href="./indexes.html"><button class="spanish"></button></a>
+    <a href="./indexen.html"><button class="english"></button></a>
+  </section>
+  <section id="about" class="banner"><img src="./assets/battle-net-brands.svg"></section>
+  <header class="title">
+    <h1>It's a well-known game. Do you want to play?</h1>
+    <h2>Rock, Paper or Scissors</h2>
+  </header>
+  <main class="game">
+    <div class="container-card">
+      <div class="container-user">
+        <img id="user" class="user" src="./img/user.svg" alt="user">
+        <p>I HUMANOID</p>
+        <p id="user-points">0</p>
+      </div>
+
+      <div class="container-img-vs">
+        <img class="vs" src="./img/vs.png" alt="Versus">
+      </div>
+
+      <div class="container-ai">
+        <img id="ai" class="ai" src="./img/user.svg" alt="ai">
+        <p>A. I.</p>
+        <p id="ai-points">0</p>
+      </div>
+    </div>
+
+    <div class="match ">
+      <p class="choises">Choise an hand</p>
+      <div class="options">
+        <button class="rock">rock</button>
+        <button class="paper">paper</button>
+        <button class="scissors">scissors</button>
+      </div>
+      <p class="reset" id="reset">Reset</p>
+      <div class="modal-container">
+        <div id="result" class="modal modal-close">
+          <div class="">
+            <p class="close">X</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Copyright 2021 <strong style="color:rgb(21, 21, 22)">Bruno Maldonado.</strong>All rights reserved.</p>
+  </footer>
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/appen.js"></script>
+</body>
+
+</html>

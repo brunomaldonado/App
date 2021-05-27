@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="follow html">
+  <meta name="author" content="Bumr">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/tablet.css" media="(min-width:768px)">
+  <link rel="stylesheet" href="./css/desktop.css" media="(min-width:1026px)">
+  <title>Piedra, Papel ó Tijera</title>
+</head>
+
+<body>
+  <section class="language">
+    <a href="./indexes.html"><button id="spanish" class="spanish"></button></a>
+    <a href="./indexen.html"><button id="english" class="english"></button></a>
+  </section>
+  <section id="about" class="banner"><img src="./assets/battle-net-brands.svg"></section>
+  <header class="title">
+    <h1>Es un juego muy conocido. Quieres jugar?</h1>
+    <h2>Piedra , Papel or Tijera</h2>
+  </header>
+  <main class="game">
+    <div class="container-card">
+      <div class="container-user">
+        <img id="user" class="user" src="./img/user.svg" alt="user">
+        <p>YO HUMANOIDE</p>
+        <p id="user-points">0</p>
+      </div>
+
+      <div class="container-img-vs">
+        <img class="vs" src="./img/vs.png" alt="Versus">
+      </div>
+
+      <div class="container-ai">
+        <img id="ai" class="ai" src="./img/user.svg" alt="ai">
+        <p>I. A.</p>
+        <p id="ai-points">0</p>
+      </div>
+    </div>
+
+    <div class="match ">
+      <p class="choises">Escoge una mano</p>
+      <div class="options">
+        <button class="rock">rock</button>
+        <button class="paper">paper</button>
+        <button class="scissors">scissors</button>
+      </div>
+      <p class="reset" id="reset">Resetear</p>
+      <div class="modal-container">
+        <div id="result" class="modal modal-close">
+          <div class="">
+            <p class="close">X</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Derechos del autor 2021 <strong style="color:rgb(21, 21, 22)">Bruno Maldonado.</strong>Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/appes.js"></script>
+</body>
+
+</html>
