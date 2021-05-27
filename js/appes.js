@@ -38,8 +38,8 @@ const game = () => {
         compareHands(this.textContent, aiChoise);
 
         //Update images
-        playerHand.src = `./img/${this.textContent}.png`;
-        aiHand.src = `./img/${aiChoise}.png`;
+        playerHand.src = `../img/${this.textContent}.png`;
+        aiHand.src = `../img/${aiChoise}.png`;
 
         e.preventDefault();
       });
@@ -164,8 +164,8 @@ function close() {
   modalC.style.display = 'none';
   console.log("click close");
 
-  user_img.src = `./img/user.svg`;
-  ai_img.src = `./img/sophia.png`;
+  user_img.src = `../img/user.svg`;
+  ai_img.src = `../img/sophia.png`;
   // ai_img.src = `./img/user.svg`;
 }
 

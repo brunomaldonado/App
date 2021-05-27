@@ -54,7 +54,7 @@ html {
 
 .game {
   position: relative;
-  height: 85vh;
+  height: 100vh;
   max-width: 410px;
   margin: 0 auto;
 }
@@ -176,7 +176,6 @@ html {
 
 .options .rock:hover {
   cursor: pointer;
-
   transform: scale(1.2)
 }
 
@@ -224,6 +223,11 @@ html {
   cursor: pointer;
   transform: scale(1.2)
 }
+
+
+/* -------------------------------------------------- */
+
+
 
 .reset {
   color: rgb(27, 26, 26);
