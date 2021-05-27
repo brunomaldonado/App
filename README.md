@@ -15,7 +15,7 @@ Cuando se trata de juego solo existen dos tipos, los ganadores y los perdedores 
 El reto del fuego, no solo fue css html y javascript, sino entender el algoritmo detras del juego. 
 Jugar a "Piedra, papel o tijera" no solo es entrenamiento, tambien juega un papel importante la estrategia.
 ### Go to the Game.
-right [here](https://brunomaldonado.github.io/App/"here")
+right [here](https://brunomaldonado.github.io/App/)
 
 ------------
 
