@@ -165,7 +165,7 @@ function close() {
   console.log("click close");
 
   user_img.src = `../img/user.svg`;
-  ai_img.src = `../img/sophia.png`;
+  ai_img.src = `../img/sophiaone.png`;
   // ai_img.src = `./img/user.svg`;
 }
 
