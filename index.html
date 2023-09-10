@@ -9,26 +9,34 @@
   <meta name="author" content="Bumr">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/tablet.css" media="(min-width:768px)">
-  <link rel="stylesheet" href="./css/desktop.css" media="(min-width:1026px)">
+  <!-- <link rel="stylesheet" href="./css/tablet.css" media="(min-width:768px)"> -->
+  <!-- <link rel="stylesheet" href="./css/desktop.css" media="(min-width:1026px)"> -->
   <title>Rock, Paper or Scissors</title>
 </head>
 
 <body>
-  <section class="language">
-    <a href="./js/index.html"><button class="spanish"></button></a>
-    <a href="#"><button class="english"></button></a>
-  </section>
-  <section id="about" class="banner"><img src="./assets/battle-net-brands.svg"></section>
-  <header class="title">
-    <h1>It's a well-known game. Do you want to play?</h1>
-    <h2>Rock, Paper or Scissors</h2>
+  <div class="cont">
+    <!-- <figure><img src="./img/hum/women.png" alt=""></figure> -->
+    <!-- <div class="tie_overlay">
+      <figure><img src="./img/hum/ax.png" alt=""></figure>
+      <figure><img src="./img/rob/robot.png" alt=""></figure>
+    </div> -->
+  <header class="top_header">
+    <div>
+      <!-- <a href="./js/index.html"><button class="spanish"></button><img class="select_language" src="./frames/mex.ico"></button></a> -->
+      <a href="#"><button class="english"><img class="select_language" src="./frames/usa.ico"></button></a>
+    </div>
+    <button id="about" class="banner"><img src="./assets/battle-net-brands.svg"></button>
   </header>
   <main class="game">
+    <header class="title">
+      <h1>It's a well-known game. Do you want to play?</h1>
+      <h2>Rock, Paper or Scissors</h2>
+    </header>
     <div class="container-card">
       <div class="container-user">
         <img id="user" class="user" src="./img/user.svg" alt="user">
-        <p>I HUMANOID</p>
+        <p>User</p>
         <p id="user-points">0</p>
       </div>
 
@@ -43,31 +51,51 @@
       </div>
     </div>
 
-    <div class="match ">
+    <div class="container_choise">
       <p class="choises">Choise an hand</p>
       <div class="options">
         <button class="rock">rock</button>
         <button class="paper">paper</button>
         <button class="scissors">scissors</button>
       </div>
-      <p class="reset" id="reset">Reset</p>
-      <div class="modal-container">
-        <div id="result" class="modal modal-close">
-          <div class="">
-            <p class="close">X</p>
-          </div>
-        </div>
+
+      <div class="reset" id="reset">
+        <!-- <p>R<button class="rock">rock</button><button class="scissors">scissors</button><button class="paper">paper</button> t</p> -->
+        <p class="letter_r">R</p>
+        <button class="rock">rock</button>
+        <button class="scissors">scissors</button>
+        <button class="paper">paper</button>
+        <p class="letter_t">t</p>
+      </div>
+
+      <div class="modal_selection">
+        <div id="result" class="modal_result"></div>
+        <span class="close_modal">
+          <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </span>
+      </div>
+    </div>
+    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, officia ipsa! Natus animi iusto quia laboriosam voluptas explicabo, ea nobis reiciendis deserunt distinctio accusamus, et esse, excepturi quae? Fuga, praesentium.</p> -->
+    <div class="show_modal">
+      <div class="modal_container">
+        <span class="close_modal" id="close_modal">
+          <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </span>
+        <div class="modal_body"></div>
       </div>
     </div>
   </main>
 
-  <footer class="footer">
-    <p>Copyright 2021 <strong style="color:rgb(21, 21, 22)">Bruno Maldonado.</strong>All rights reserved.</p>
-  </footer>
-  <script type="text/javascript"
-    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <!-- <div class="banner-container">
+    <P class="bannertitle">Playing “Rock, Paper or Scissors” is not only training, strategy also an important role.</P><br>
+    <P class="bannertitle">Where you <strong style="color:rgb(14, 68, 230)">"I Humanoid"</strong> you play with the “Artificial Intelligence (A. I.)" so that the A. I. will show the images of the hand in a random way.</P><br><button class="frameone"></button><br><P class="Instructionframe">In the frame two you select the hand you want to play with:</P><ul class="hand"><li>Stone: A clenched fist.</li><li>Role: All fingers extended with the palm of the hand on the side.</li><li>Scissors: Index and middle fingers extended and separated forming a “V”"</li></ul><br><button class="frametwo"></button><br><P class="objetive">The objective is to beat the opponent by selecting the weapon that wins, according to the following rules:</P><ul class="objetive"><li>The stone crushes the scissors. (Win the stone).</li>
+    <li>The paper wraps the stone (Win the role).</li><li>The scissors cut the paper. (Win the scissors).</li></ul><P class="objetive">In case it is a tie! it is played again.</P><br><P class="message">For each hand that is played it shows you the message if you won or lost or otherwise, a draw! Like the picture below."Just click on the same message box to play again."</P><br> -->
 
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <footer class="footer">
+    <p> Copyright © 2021 Bruno Maldonado. All rights reserved.</p>
+  </footer>
+  </div>
+
   <script src="./js/appen.js"></script>
 </body>
 

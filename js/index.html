@@ -9,26 +9,32 @@
   <meta name="author" content="Bumr">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/tablet.css" media="(min-width:768px)">
-  <link rel="stylesheet" href="../css/desktop.css" media="(min-width:1026px)">
+  <!-- <link rel="stylesheet" href="../css/tablet.css" media="(min-width:768px)"> -->
+  <!-- <link rel="stylesheet" href="../css/desktop.css" media="(min-width:1026px)"> -->
   <title>Piedra, Papel ó Tijera</title>
 </head>
 
 <body>
-  <section class="language">
-    <a href="#"><button id="spanish" class="spanish"></button></a>
-    <a href="../index.html"><button id="english" class="english"></button></a>
-  </section>
-  <section id="about" class="banner"><img src="../assets/battle-net-brands.svg"></section>
-  <header class="title">
-    <h1>Es un juego muy conocido. Quieres jugar?</h1>
-    <h2>Piedra , Papel or Tijera</h2>
+
+  <header class="top_header">
+    <div>
+      <a href="#"><button class="spanish"></button><img class="select_language" src="../frames/mex.ico"></button></a>
+      <a href="../index.html"><button class="english"><img class="select_language" src="../frames/usa.ico"></button></a>
+<!--       
+      <a href="#"><button id="spanish" class="spanish"></button></a>
+      <a href="../index.html"><button id="english" class="english"></button></a> -->
+    </div>
+    <button id="about" class="banner"><img src="../assets/battle-net-brands.svg"></button>
   </header>
   <main class="game">
+    <header class="title">
+      <h1>Es un juego muy conocido. Quieres jugar?</h1>
+      <h2>Piedra, Papel o Tijera</h2>
+    </header>
     <div class="container-card">
       <div class="container-user">
         <img id="user" class="user" src="../img/user.svg" alt="user">
-        <p>YO HUMANOIDE</p>
+        <p>Usuario</p>
         <p id="user-points">0</p>
       </div>
 
@@ -38,31 +44,37 @@
 
       <div class="container-ai">
         <a href="https://www.hansonrobotics.com/sophia/" target="_blank"><img id="ai" class="ai" src="../img/user.svg" alt="ai"></a>
-        <p>I. A.</p>
+        <p>I. A</p>
         <p id="ai-points">0</p>
       </div>
     </div>
 
-    <div class="match ">
-      <p class="choises">Escoge una mano</p>
+    <div class="match">
+      <p class="choises">Escoge una mana</Em></p>
       <div class="options">
         <button class="rock">rock</button>
         <button class="paper">paper</button>
         <button class="scissors">scissors</button>
       </div>
-      <p class="reset" id="reset">Resetear</p>
+
+      <div class="reset" id="reset">
+        <!-- <p>R<button class="rock">rock</button><button class="scissors">scissors</button><button class="paper">paper</button> t</p> -->
+        <p class="letter_r">R</p>
+        <button class="rock">rock</button>
+        <button class="scissors">scissors</button>
+        <button class="paper">paper</button>
+        <p class="letter_t">t</p>
+      </div>
+
       <div class="modal-container">
         <div id="result" class="modal modal-close">
-          <div class="">
-            <p class="close">X</p>
-          </div>
         </div>
       </div>
     </div>
   </main>
 
   <footer class="footer">
-    <p>Derechos del autor 2021 <strong style="color:rgb(21, 21, 22)">Bruno Maldonado.</strong>Todos los derechos reservados.</p>
+    <p> Derechos del autor © 2021 Bruno Maldonado.Todos los derechos reservados.</p>
   </footer>
 
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

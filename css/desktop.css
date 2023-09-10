@@ -134,16 +134,6 @@ height: 72vh;
   height: 27px;
 }
 
-.banner{
-  width: 2.5%;
-  height: 2.5%;
-  left: calc(97% - 5px);
-}
-
-.bannertitle{
-  max-width: 45%;
-}
-
 .message{
   max-width: 45%;
   text-align: left;

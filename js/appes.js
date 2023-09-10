@@ -79,8 +79,11 @@ const game = () => {
       // console.log("empate champions");
       // choises.textContent = "Empate";
       result.innerHTML = `
-      <h1>Empate!</h1>
-      <p class="close">X</p>
+        <img id="tie" class="tie" src="../img/X5NX.gif" alt="tie">
+        <h1 class="tie_message">Empate!</h1>
+        <span class="close">
+          <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </span>
       `;
 
       empate();
@@ -89,8 +92,11 @@ const game = () => {
       // console.log("You lost Champions, the AI ​​won you");
       // choises.textContent = "You lost Champions, the AI ​​won you";
       result.innerHTML = `
-      <h1>Perdiste Campeón, la I. A. te ganó</h1>
-      <p class="close">X</p>
+        <img id="loser" class="loser" src="../img/6ob.gif" alt="loser">
+        <h1 class="ai_won">Perdiste Campeón, la I. A. te ganó</h1>
+        <span class="close">
+          <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </span>
       `;
 
       machine_win();
@@ -99,8 +105,12 @@ const game = () => {
       // console.log("You won Champions")
       // choises.textContent = "You won Champions";
       result.innerHTML = `
-      <h1>Ganaste Campeón, Excelente.</h1>
-      <p class="close">X</p>
+      
+        <img id="winner" class="winner" src="../img/6SSp.gif" alt="ai_won">
+        <h1 class="user_won">Campeon ganaste, Felicidades</h1>
+        <span class="close">
+          <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </span>
       `;
 
       user_win();
@@ -165,7 +175,7 @@ function close() {
   console.log("click close");
 
   user_img.src = `../img/user.svg`;
-  ai_img.src = `../img/sophiaone.png`;
+  ai_img.src = `../img/sophia.png`;
   // ai_img.src = `./img/user.svg`;
 }
 
