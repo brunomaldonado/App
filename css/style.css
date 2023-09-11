@@ -473,6 +473,8 @@ table, tr, td {
   overflow: auto;
   position: absolute;
   transition: opacity 0.5s ease 0.5s;
+  /* border: 0.5px solid rgba(0, 0, 0, 0.055); */
+
 }
 
 .modal_result {
@@ -539,6 +541,7 @@ table, tr, td {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
+
 }
 
 .modal_body {
@@ -688,12 +691,13 @@ licuar
   height: 156px;
 }
 
-.alertwon{
+.alertMessage{
   background-image: url(../frames/message.png);
   background-size: 100% 100%;
   border: none;
   width: 320px;
   height: 156px;
+  margin-bottom: 23px;
 }
 
 /* ====================spanish frame======================= */
@@ -727,7 +731,9 @@ licuar
 .modal_body ul:nth-last-child(2) {
   text-decoration: none;
 }
-
+.hands_tie {
+  margin-bottom: 13px;
+}
 .hands_tie button:nth-child(1) {
   transform: scaleX(-1);
 }

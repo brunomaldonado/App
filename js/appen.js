@@ -18,8 +18,8 @@ const background_users = document.getElementById("background_users")
 const background_ai = document.getElementById("background_ai")
 const tie_background__users  = document.getElementById("tie_background__users")
 const tie_background__ai  = document.getElementById("tie_background__ai")
-var usersImages = ["../img/hum/01.png","../img/hum/03.png","../img/hum/02.png","../img/hum/04.png"]
-var iaImages = ["../img/rob/01.png","../img/rob/02.png","../img/rob/03.png","../img/rob/04.png"]
+var usersImages = ["./img/hum/01.png","./img/hum/03.png","./img/hum/02.png","./img/hum/04.png"]
+var iaImages = ["./img/rob/01.png","./img/rob/02.png","./img/rob/03.png","./img/rob/04.png"]
 var index = 0;
 
 var bookmark_user = 0;
@@ -188,7 +188,7 @@ function aboutTheGame (){
   </li>
   </ul>
   <h2 class="Instruction">For each hand that is played it shows you the message if you won or lost or otherwise, a draw! Like the picture below."Just click on the same message box to play again."</h2>
-  <button class="alertwon"></button>
+  <button class="alertMessage"></button>
       
   `;
     console.log("about the game");
