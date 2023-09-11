@@ -3,26 +3,28 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="./assets/icons.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="follow html">
   <meta name="author" content="Bumr">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
-  <!-- <link rel="stylesheet" href="./css/tablet.css" media="(min-width:768px)"> -->
-  <!-- <link rel="stylesheet" href="./css/desktop.css" media="(min-width:1026px)"> -->
   <title>Rock, Paper or Scissors</title>
 </head>
 
 <body>
   <div class="cont">
-    <div class="background">
-      <figure><img src="./img/hum/women.png" alt=""></figure>
+    <div class="background" id="background">
+      <figure><img id="background_users" src="./img//01.png" alt="">
+      <figure><img id="background_ai" src="./img//03.png" alt="">
     </div>
-    <!-- <div class="tie_overlay">
-      <figure><img src="./img/hum/ax.png" alt=""></figure>
-      <figure><img src="./img/rob/robot.png" alt=""></figure>
-    </div> -->
+    <div class="tie_overlay" id="tie_overlay">
+      <figure><img id="tie_background__users" src="./img//women.png" alt=""></figure>
+      <figure><img id="tie_background__ai" src="./img//arn.png" alt=""></figure>
+      <!-- <figure><img src="./img/hum/ax.png" alt=""></figure>
+      <figure><img src="./img/rob/robot.png" alt=""></figure> -->
+    </div>
   <header class="top_header">
     <div>
       <!-- <a href="./js/index.html"><button class="spanish"></button><img class="select_language" src="./frames/mex.ico"></button></a> -->
@@ -63,11 +65,11 @@
 
       <div class="reset" id="reset">
         <!-- <p>R<button class="rock">rock</button><button class="scissors">scissors</button><button class="paper">paper</button> t</p> -->
-        <p class="letter_r">R</p>
+        <span class="letter_r">R</span>
         <button class="rock">rock</button>
         <button class="scissors">scissors</button>
         <button class="paper">paper</button>
-        <p class="letter_t">t</p>
+        <span class="letter_t">t</span>
       </div>
 
       <div class="modal_selection">
@@ -87,12 +89,7 @@
       </div>
     </div>
   </main>
-
-  <!-- <div class="banner-container">
-    <P class="bannertitle">Playing “Rock, Paper or Scissors” is not only training, strategy also an important role.</P><br>
-    <P class="bannertitle">Where you <strong style="color:rgb(14, 68, 230)">"I Humanoid"</strong> you play with the “Artificial Intelligence (A. I.)" so that the A. I. will show the images of the hand in a random way.</P><br><button class="frameone"></button><br><P class="Instructionframe">In the frame two you select the hand you want to play with:</P><ul class="hand"><li>Stone: A clenched fist.</li><li>Role: All fingers extended with the palm of the hand on the side.</li><li>Scissors: Index and middle fingers extended and separated forming a “V”"</li></ul><br><button class="frametwo"></button><br><P class="objetive">The objective is to beat the opponent by selecting the weapon that wins, according to the following rules:</P><ul class="objetive"><li>The stone crushes the scissors. (Win the stone).</li>
-    <li>The paper wraps the stone (Win the role).</li><li>The scissors cut the paper. (Win the scissors).</li></ul><P class="objetive">In case it is a tie! it is played again.</P><br><P class="message">For each hand that is played it shows you the message if you won or lost or otherwise, a draw! Like the picture below."Just click on the same message box to play again."</P><br> -->
-
+  
   <footer class="footer">
     <p> Copyright © 2021 Bruno Maldonado. All rights reserved.</p>
   </footer>

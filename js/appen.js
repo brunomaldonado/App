@@ -1,3 +1,4 @@
+const background = document.getElementById("background");
 const modal_selection = document.querySelector(".modal_selection");
 const show_modal = document.querySelector(".show_modal")
 const close_modal = document.getElementsByClassName(".close_modal")
@@ -16,6 +17,13 @@ var english = document.getElementById("english")
 // const winner = document.getElementById("winner");
 // const loser = document.getElementById("loser");
 // const tie = document.getElementById("tie");
+const background_users = document.getElementById("background_users")
+const background_ai = document.getElementById("background_ai")
+const tie_background__users  = document.getElementById("tie_background__users")
+const tie_background__ai  = document.getElementById("tie_background__ai")
+var usersImages = ["../img/hum/01.png","../img/hum/03.png","../img/hum/02.png","../img/hum/04.png"]
+var iaImages = ["../img/rob/01.png","../img/rob/02.png","../img/rob/03.png","../img/rob/04.png"]
+var index = 0;
 
 var bookmark_user = 0;
 var bookmark_ai = 0;
@@ -72,7 +80,7 @@ const game = () => {
   }
 
   function empate() {
-    console.log("<=========---======>  EMPATE  <=======---======> ");
+    console.log("<=========---======>  TIE  <=======---======> ");
   }
 
 
@@ -83,10 +91,21 @@ const game = () => {
 
 
     if (userChoise === aiChoise) {
+
+      index++;
+      index = index % iaImages.length;
+      tie_background__ai.src = iaImages[index];
+      tie_background__ai.style.display = 'block'
+
+      index++;
+      index = index % usersImages.length;
+      tie_background__users.src = usersImages[index]; 
+      tie_background__users.style.display = 'block'
+      // background.style.visibility = 'visible'
+
       result.innerHTML = `
       <img id="tie" class="tie" src="./img/X5NX.gif" alt="tie">
       <h1 class="tie_message">Tie!</h1>
-     
       `;
 
       empate();
@@ -94,6 +113,13 @@ const game = () => {
     } else if (userChoise === "rock" && aiChoise === "paper" || userChoise === "paper" && aiChoise === "scissors" || userChoise === "scissors" && aiChoise === "rock") {
       // console.log("You lost Champions, the AI ​​won you");
       // choises.textContent = "You lost Champions, the AI ​​won you";
+      index++;
+      index = index % iaImages.length;
+      background_ai.src = iaImages[index];
+      background_ai.style.display = 'block'
+      // background_ai.src = `./img/rob/rob.png`;
+      // background.style.visibility = 'visible'
+
       result.innerHTML = `
       <img id="loser" class="loser" src="./img/6ob.gif" alt="loser">
       <h1 class="ai_won">You Lost Champion, the A. I. ​​won you</h1>
@@ -105,9 +131,15 @@ const game = () => {
     } else if (userChoise === "rock" && aiChoise === "scissors" || userChoise === "paper" && aiChoise === "rock" || userChoise === "scissors" && aiChoise === "paper") {
       // console.log("You won Champions")
       // choises.textContent = "You won Champions";
+      index++;
+      index = index % usersImages.length;
+      background_users.src = usersImages[index]; 
+      background_users.style.display = 'block'
+      // background.style.visibility = 'visible'
+      // background_human.src = `./img/hum/women.png`;
       result.innerHTML = `
       <img id="winner" class="winner" src="./img/6SSp.gif" alt="ai_won">
-      <h1 class="user_won">You Won Champion, Excellent</h1>
+      <h1 class="user_won">You Won Champion, Good hand</h1>
      
       `;
 
@@ -123,31 +155,49 @@ const game = () => {
 function aboutTheGame (){
   show_modal.style.display = 'block';
   modal_container.style.display = 'block';
-  modal_body.style.display = 'block';
+  modal_body.style.display = 'visible';
   modal_body.innerHTML = `
+  <h1 class="title_modal">Welcome to the game.</h1>
+  <h2 class="Instruction">Playing “Rock, Paper or Scissors” is not only training, strategy also an important role.</h2>
+  <h2 class="Instruction">Where are you the <strong style="color:rgb(14, 68, 230)">"User,"</strong> you play with the “Artificial Intelligence (A. I.)" so that the A. I. will show the images of the hand in a random way.</h2>
+  <button class="frameone"></button>
+  <h2 class="Instruction">In the frame two you select the hand you want to play with:</h2>
+  <ul class="hand">
+    <li>Stone: A clenched fist. <button class="frameStone"></button></li>
+    <li>Role: All fingers extended with the palm of the hand on the side. <button class="frameRole"></li>
+    <li>Scissors: Index and middle fingers extended and separated forming a “V”. <button class="frameScissor"></li>
+  </ul>
+  <button class="frametwo"></button><br>
+  <h2 class="Instruction">The objective is to beat the opponent by selecting the weapon that wins, according to the following rules:</h2>
   
-  <P class="bannertitle">Playing “Rock, Paper or Scissors” is not only training, strategy also an important role.</P><br>
-  <P class="bannertitle">Where you <strong style="color:rgb(14, 68, 230)">"I Humanoid"</strong> you play with the “Artificial Intelligence (A. I.)" so that the A. I. will show the images of the hand in a random way.</P><br><button class="frameone"></button><br><P class="Instructionframe">In the frame two you select the hand you want to play with:</P><ul class="hand"><li>Stone: A clenched fist.</li><li>Role: All fingers extended with the palm of the hand on the side.</li><li>Scissors: Index and middle fingers extended and separated forming a “V”"</li></ul><br><button class="frametwo"></button><br><P class="objetive">The objective is to beat the opponent by selecting the weapon that wins, according to the following rules:</P><ul class="objetive"><li>The stone crushes the scissors. (Win the stone).</li>
-  <li>The paper wraps the stone (Win the role).</li><li>The scissors cut the paper. (Win the scissors).</li></ul><P class="objetive">In case it is a tie! it is played again.</P><br><P class="message">For each hand that is played it shows you the message if you won or lost or otherwise, a draw! Like the picture below."Just click on the same message box to play again."</P><br>
-  <P class="bannertitle">Playing “Rock, Paper or Scissors” is not only training, strategy also an important role.</P><br>
-  <P class="bannertitle">Where you <strong style="color:rgb(14, 68, 230)">"I Humanoid"</strong> you play with the “Artificial Intelligence (A. I.)" so that the A. I. will show the images of the hand in a random way.</P><br><button class="frameone"></button><br>
-      
+  <ul class="hand">
+    <li>The stone crushes the scissors. (Win the stone).
+      <button class="frameScissor"></button>
+      <button class="frameStone"></button>
+    </li>
+    <li>The role wraps the stone (Win the role).
+    <button class="frameStone"></button>
+      <button class="frameRole"></button>
+    </li>
+    <li>The scissors cut the paper. (Win the scissors).
+      <button class="frameScissor"></button>
+      <button class="frameRole"></button>
+    </li>
+  </ul>
+  <ul class="hand">
+  <li class="hands_tie">In case it is a tie! it is played again. 
+    <button class="frameStone"></button>
+    <button class="frameStone"></button>
+  </li>
+  </ul>
+  <h2 class="Instruction">For each hand that is played it shows you the message if you won or lost or otherwise, a draw! Like the picture below."Just click on the same message box to play again."</h2>
+  <button class="alertwon"></button>
       
   `;
     console.log("about the game");
     document.getElementById("close_modal").addEventListener("click", close)
     // document.querySelector(".show_modal").addEventListener("click", close)
 }
-
-/*
-<div class="banner-container">
-    <P class="bannertitle">Playing “Rock, Paper or Scissors” is not only training, strategy also an important role.</P><br>
-    <P class="bannertitle">Where you <strong style="color:rgb(14, 68, 230)">"I Humanoid"</strong> you play with the “Artificial Intelligence (A. I.)" so that the A. I. will show the images of the hand in a random way.</P><br><button class="frameone"></button><br><P class="Instructionframe">In the frame two you select the hand you want to play with:</P><ul class="hand"><li>Stone: A clenched fist.</li><li>Role: All fingers extended with the palm of the hand on the side.</li><li>Scissors: Index and middle fingers extended and separated forming a “V”"</li></ul><br><button class="frametwo"></button><br><P class="objetive">The objective is to beat the opponent by selecting the weapon that wins, according to the following rules:</P><ul class="objetive"><li>The stone crushes the scissors. (Win the stone).</li>
-    <li>The paper wraps the stone (Win the role).</li><li>The scissors cut the paper. (Win the scissors).</li></ul><P class="objetive">In case it is a tie! it is played again.</P><br><P class="message">For each hand that is played it shows you the message if you won or lost or otherwise, a draw! Like the picture below."Just click on the same message box to play again."</P><br>
-
-
-*/
-
 
 function restartGame() {
   restart.addEventListener('click', function () {
@@ -182,6 +232,11 @@ function close() {
   show_modal.style.display = 'none';
   // modal_container.style.display = 'block'
   console.log("click close");
+  background_ai.style.display = 'none'
+  background_users.style.display = 'none'
+  tie_background__users.style.display = 'none'
+  tie_background__ai.style.display = 'none'
+  // background.style.visibility = 'hidden'
 
   user_img.src = `./img/user.svg`;
   ai_img.src = `./img/rob/sophia.png`;
