@@ -69,7 +69,7 @@ table, tr, td {
 }
 @font-face {
   font-family: "american";
-  src: url("../fonts/American\ Text/American\ text.ttf") format('truetype');
+  src: url("../fonts/American/American-Text.ttf") format('truetype');
 }
 @font-face {
   font-family: "gt";
