@@ -8,7 +8,8 @@ Una previa visualizacion del juego, for cell phones, tablets and desktop.
 <table>
   <tr>
     <!-- <td valign="top"><img src="./assets/tablet.PNG" alt="tablet"></td> -->
-    <td valign="top"><img src="./assets/simulator.PNG" alt="tablet"></td>
+    <!-- <td valign="top"><img src="./assets/simulator1.PNG" alt="tablet"></td> -->
+    <td valign="top"><img src="./assets/tablet.PNG" alt="tablet"></td>
     <td valign="top"><img src="./assets/mobile.PNG" alt="mobile"></td>
   </tr>
 </table>
@@ -16,7 +17,7 @@ Una previa visualizacion del juego, for cell phones, tablets and desktop.
 Cuando se trata de juego solo existen dos tipos, los ganadores y los perdedores donde tu juegas con la I. A. solo encuentra la forma de vencerlo, los ganadores no dan escusas cuando el otro lado a jugado bien.
 
 <p align = "center">
-  <img src="./assets/fullscreen.PNG" alt="Start the Game">
+  <img src="./assets/desktop.PNG" alt="Start the Game">
 </p>
 
 El reto del fuego, no solo fue css-html y javascript, sino entender el algoritmo detras del juego.
