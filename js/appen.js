@@ -18,7 +18,7 @@ const background_users = document.getElementById("background_users")
 const background_ai = document.getElementById("background_ai")
 const tie_background__users  = document.getElementById("tie_background__users")
 const tie_background__ai  = document.getElementById("tie_background__ai")
-var usersImages = ["./img/hum/01.png","./img/hum/02.png","./img/hum/10.png","./img/hum/04.png","./img/hum/05.png","./img/hum/07.png","./img/hum/08.png","./img/hum/09.png","./img/hum/10.png"]
+var usersImages = ["./img/hum/09.png","./img/hum/10.png","./img/hum/04.png","./img/hum/05.png","./img/hum/07.png","./img/hum/06.png","./img/hum/03.png","./img/hum/08.png"]
 var iaImages = ["./img/rob/01.png","./img/rob/02.png","./img/rob/03.png","./img/rob/04.png","./img/rob/05.png","./img/rob/06.png","./img/rob/07.png","./img/rob/08.png"]
 var index = 0;
 
