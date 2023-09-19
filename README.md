@@ -1,6 +1,6 @@
 # Rock-Paper-Scissors game
 
-Una previa visualizacion del juego, for cell phones, tablets and desktop.
+A preview of the game, for mobile phone, tablets and desktop
 
 <!-- <p align="center">
   <img src="./assets/rps.gif" alt="animated">
@@ -10,23 +10,20 @@ Una previa visualizacion del juego, for cell phones, tablets and desktop.
     <!-- <td valign="top"><img src="./assets/tablet.PNG" alt="tablet"></td> -->
     <!-- <td valign="top"><img src="./assets/simulator1.PNG" alt="tablet"></td> -->
     <td valign="top"><img src="./assets/tablet.PNG" alt="tablet"></td>
-    <td valign="top"><img src="./assets/mobile.PNG" alt="mobile"></td>
+    <td valign="top"><img src="./assets/mob.PNG" alt="mobile"></td>
   </tr>
 </table>
 
-Cuando se trata de juego solo existen dos tipos, los ganadores y los perdedores donde tu juegas con la I. A. solo encuentra la forma de vencerlo, los ganadores no dan escusas cuando el otro lado a jugado bien.
+When it comes to gambling there are only two types, winners and losers. Where you play with artificial intellingence. Figure out a way to beat him anyway. Winners don't make excuses when the other side plays the game.
 
 <p align = "center">
-  <img src="./assets/desktop.PNG" alt="Start the Game">
+  <img src="./assets/desk.PNG" alt="Start the Game">
 </p>
 
-El reto del fuego, no solo fue css-html y javascript, sino entender el algoritmo detras del juego.
-Jugar a "Piedra, papel o tijera" no solo es entrenamiento, tambien juega un papel importante: la estrategia!.
+The challenge of this exercise was not only the user interface, but to understand the algorithm behind the game, playing Rock Paper Scissors is not only training, but also plays an important role, the strategy.
 
 ### Go to the Game.
 
-right [here](https://brunomaldonado.github.io/App/)
-
----
+<p>right <a href="https://brunomaldonado.github.io/App/" target="_blank">here</a></p>
 
 > Creator: Bruno Maldonado Rigoberto.
