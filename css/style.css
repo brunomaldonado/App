@@ -724,11 +724,11 @@ licuar
 }
 
 .alertMessage{
-  background-image: url(../frames/message.png);
+  background-image: url(../frames/tie.png);
   background-size: 100% 100%;
   border: none;
   width: 320px;
-  height: 156px;
+  height: 180px;
   margin-bottom: 23px;
 }
 
