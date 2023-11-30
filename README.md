@@ -5,12 +5,16 @@ A preview of the game, for mobile phone, tablets and desktop
 <!-- <p align="center">
   <img src="./assets/rps.gif" alt="animated">
 </p> -->
+<div align="center">
+  <img src="./assets/tablet.PNG" valign="top"  style="width: 49%;" alt="tablet">
+  &nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="./assets/mob.PNG" style="width: 38%;" alt="mobile">
+</div>
+
 <table>
-  <tr>
-    <!-- <td valign="top"><img src="./assets/tablet.PNG" alt="tablet"></td> -->
-    <!-- <td valign="top"><img src="./assets/simulator1.PNG" alt="tablet"></td> -->
-    <td valign="top"><img src="./assets/tablet.PNG" alt="tablet"></td>
-    <td valign="top"><img src="./assets/mob.PNG" alt="mobile"></td>
+  <tr style="border: none; background: transparent;">
+    <td style="border: none;" valign="top"><img src="./assets/tablet.PNG" alt="tablet"></td>
+    <td style="border: none;" valign="top"><img src="./assets/mob.PNG" alt="mobile"></td>
   </tr>
 </table>
 
