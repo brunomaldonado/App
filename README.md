@@ -11,12 +11,12 @@ A preview of the game, for mobile phone, tablets and desktop
   <img src="./assets/mob.PNG" style="width: 38%;" alt="mobile">
 </div>
 
-<table>
+<!-- <table>
   <tr style="border: none; background: transparent;">
     <td style="border: none;" valign="top"><img src="./assets/tablet.PNG" alt="tablet"></td>
     <td style="border: none;" valign="top"><img src="./assets/mob.PNG" alt="mobile"></td>
   </tr>
-</table>
+</table> -->
 
 When it comes to gambling there are only two types, winners and losers. Where you play with artificial intellingence. Figure out a way to beat him anyway. Winners don't make excuses when the other side plays the game.
 
