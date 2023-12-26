@@ -6,7 +6,7 @@ A preview of the game, for mobile phone, tablets and desktop
   <img src="./assets/rps.gif" alt="animated">
 </p> -->
 <div align="center">
-  <img src="./assets/tablet.PNG" valign="top"  style="width: 49%;" alt="tablet">
+  <img src="./assets/tab.PNG" valign="top"  style="width: 49%;" alt="tablet">
   &nbsp; &nbsp; &nbsp; &nbsp;
   <img src="./assets/mobile.PNG" style="width: 38%;" alt="mobile">
 </div>
