@@ -8,7 +8,7 @@ A preview of the game, for mobile phone, tablets and desktop
 <div align="center">
   <img src="./assets/tablet.PNG" valign="top"  style="width: 49%;" alt="tablet">
   &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="./assets/mob.PNG" style="width: 38%;" alt="mobile">
+  <img src="./assets/mobile.PNG" style="width: 38%;" alt="mobile">
 </div>
 
 <!-- <table>
@@ -21,7 +21,7 @@ A preview of the game, for mobile phone, tablets and desktop
 When it comes to gambling there are only two types, winners and losers. Where you play with artificial intellingence. Figure out a way to beat him anyway. Winners don't make excuses when the other side plays the game.
 
 <p align = "center">
-  <img src="./assets/desk.PNG" alt="Start the Game">
+  <img src="./assets/ipad.PNG" alt="Start the Game">
 </p>
 
 The challenge of this exercise was not only the user interface, but to understand the algorithm behind the game, playing Rock Paper Scissors is not only training, but also plays an important role, the strategy.
