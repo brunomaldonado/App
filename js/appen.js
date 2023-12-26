@@ -4,7 +4,10 @@ const show_modal = document.querySelector(".show_modal")
 const close_modal = document.getElementsByClassName(".close_modal")
 const modal_container = document.querySelector(".modal_container")
 const modal_body = document.querySelector(".modal_body")
+const modal_background = document.querySelector(".modal_background")
 const about = document.getElementById("about")
+const banner = document.querySelector(".banner")
+const icon = document.querySelector(".icon")
 const choises = document.querySelector(".choises");
 const result = document.getElementById("result");
 const user_img = document.getElementById("user");
@@ -15,11 +18,12 @@ var restart = document.getElementById("reset");
 var spanish = document.getElementById("spanish");
 var english = document.getElementById("english")
 const background_users = document.getElementById("background_users")
+const modal_users = document.getElementById("modal_users")
 const background_ai = document.getElementById("background_ai")
 const tie_background__users  = document.getElementById("tie_background__users")
 const tie_background__ai  = document.getElementById("tie_background__ai")
-var usersImages = ["./img/hum/09.png","./img/hum/10.png","./img/hum/04.png","./img/hum/05.png","./img/hum/07.png","./img/hum/06.png","./img/hum/03.png","./img/hum/08.png"]
-var iaImages = ["./img/rob/01.png","./img/rob/02.png","./img/rob/03.png","./img/rob/04.png","./img/rob/05.png","./img/rob/06.png","./img/rob/07.png","./img/rob/08.png"]
+const usersImages = ["./img/hum/09.png","./img/hum/10.png","./img/hum/05.png","./img/hum/042.png","./img/hum/07.png","./img/hum/06.png","./img/hum/08.png","./img/hum/11.png","./img/hum/g.png","./img/hum/c.png","./img/hum/042.png","./img/hum/03.png","./img/hum/b.png"]
+const iaImages = ["./img/rob/01.png","./img/rob/02.png","./img/rob/03.png","./img/rob/04.png","./img/rob/05.png","./img/rob/06.png","./img/rob/07.png","./img/rob/08.png"]
 var index = 0;
 
 var bookmark_user = 0;
@@ -88,12 +92,10 @@ const game = () => {
 
 
     if (userChoise === aiChoise) {
-
       index++;
       index = index % iaImages.length;
       tie_background__ai.src = iaImages[index];
       tie_background__ai.style.display = 'block'
-
       index++;
       index = index % usersImages.length;
       tie_background__users.src = usersImages[index]; 
@@ -150,10 +152,18 @@ const game = () => {
 };
 
 function aboutTheGame (){
+  // const randomImageUrl = usersImages[Math.floor(Math.random() * usersImages.length)];
+  // modal_users.src = randomImageUrl
+  about.classList.toggle('active')
+  index++;
+  index = index % usersImages.length;
+  // modal_users.src = usersImages[index]; 
+
   show_modal.style.display = 'block';
   modal_container.style.display = 'block';
   modal_body.style.display = 'visible';
   modal_body.innerHTML = `
+  <img id="modal_users" src=${usersImages[index]} alt="">
   <h1 class="title_modal">Welcome to the game.</h1>
   <h2 class="Instruction">Playing “Rock, Paper or Scissors” is not only training, strategy also an important role.</h2>
   <h2 class="Instruction">Where are you the <strong style="color:rgb(14, 68, 230)">"User,"</strong> you play with the “Artificial Intelligence (A. I.)" so that the A. I. will show the images of the hand in a random way.</h2>
@@ -236,13 +246,17 @@ function close() {
   console.log("click close");
   background_ai.style.display = 'none'
   background_users.style.display = 'none'
+  // modal_users.style.display = 'none'
   tie_background__users.style.display = 'none'
   tie_background__ai.style.display = 'none'
   // background.style.visibility = 'hidden'
-
   user_img.src = `./img/user.svg`;
   ai_img.src = `./img/rob/sophia.png`;
   // ai_img.src = `./img/user.svg`;
+  about.classList.toggle('active')
+  icon.classList.toggle('active')
+  banner.classList.toggle('active')
+
 }
 
 //Start the game function
