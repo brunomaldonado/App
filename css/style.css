@@ -233,11 +233,6 @@ img {
   border-radius: 2px;
   margin-left: -2px;
   background-color: #5bc0de;
-  /* animation-delay: 0s;
-  animation: pulsate 2s;
-  animation-direction: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps; */
 }
 
 .icon.info::after {
@@ -249,11 +244,6 @@ img {
   margin-left: -2px;
   top: 7px;
   background-color: #5bc0de;
-  /* animation-delay: 0s;
-  animation: pulsate 2s;
-  animation-direction: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps; */
 }
 
 @keyframes pulsate {

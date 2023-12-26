@@ -84,12 +84,7 @@ const game = () => {
     console.log("<=========---======>  TIE  <=======---======> ");
   }
 
-
   const compareHands = (userChoise, aiChoise) => {
-
-    // console.log("userChoise ======> " + userChoise);
-    // console.log("aiChoise ========> " + aiChoise);
-
 
     if (userChoise === aiChoise) {
       index++;
