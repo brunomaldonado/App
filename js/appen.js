@@ -22,7 +22,7 @@ const modal_users = document.getElementById("modal_users")
 const background_ai = document.getElementById("background_ai")
 const tie_background__users  = document.getElementById("tie_background__users")
 const tie_background__ai  = document.getElementById("tie_background__ai")
-const usersImages = ["./img/hum/g.png","./img/hum/10.png","./img/hum/11.png","./img/hum/05.png","./img/hum/07.png","./img/hum/06.png","./img/hum/08.png","./img/hum/09.png","./img/hum/03.png","./img/hum/c.png","./img/hum/042.png","./img/hum/aa.png","./img/hum/b.png"]
+const usersImages = ["./img/hum/g.png","./img/hum/10.png","./img/hum/11.png","./img/hum/05.png","./img/hum/07.png","./img/hum/06.png","./img/hum/08.png","./img/hum/09.png","./img/hum/03.png","./img/hum/c.png","./img/hum/042.png","./img/hum/a.png","./img/hum/b.png"]
 const iaImages = ["./img/rob/01.png","./img/rob/06.png","./img/rob/03.png","./img/rob/04.png","./img/rob/05.png","./img/rob/02.png","./img/rob/07.png","./img/rob/08.png"]
 var index = 0;
 
